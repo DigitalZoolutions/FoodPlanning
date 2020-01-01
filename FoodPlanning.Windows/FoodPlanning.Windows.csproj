@@ -119,6 +119,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AppBootstrapper.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -156,11 +157,21 @@
     <PackageReference Include="Xamarin.Forms">
       <Version>4.4.0.991265</Version>
     </PackageReference>
+    <PackageReference Include="XLabs.IoC">
+      <Version>2.0.5782</Version>
+    </PackageReference>
+    <PackageReference Include="XLabs.IoC.TinyIoC">
+      <Version>2.0.5782</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FoodPlanning.App\FoodPlanning.App.csproj">
       <Project>{52eefe22-cbbd-4710-8a4b-9b6a9948b1aa}</Project>
       <Name>FoodPlanning.App</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FoodPlanning.Common\FoodPlanning.Common.csproj">
+      <Project>{7bdf5f67-afcb-4bb4-8976-f4223e010b8b}</Project>
+      <Name>FoodPlanning.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

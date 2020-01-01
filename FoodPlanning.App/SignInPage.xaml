@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FoodPlanning.App.SignInPage">
+    
+    <StackLayout VerticalOptions="StartAndExpand">
+        <StackLayout VerticalOptions="End" Margin="20">
+            <Label Text="Username" TextColor="White" />
+            <Entry Text="{Binding Username}"
+                   Placeholder="username@domain.com"
+                   PlaceholderColor="LightGray"
+                   TextColor="White"
+                   BackgroundColor="#FF222222"
+                   Keyboard="Email"/>
+            <BoxView BackgroundColor="White"
+                     HeightRequest="1"/>
+            <Label Text="Password"
+                   TextColor="White" />
+            <Entry Text="{Binding Password}"
+                   IsPassword="True"
+                   Placeholder="**********"
+                   PlaceholderColor="LightGray"
+                   TextColor="White"
+                   BackgroundColor="#FF222222"
+                   ReturnType="Go"
+                   ReturnCommand="{Binding SignIn}" />
+            <BoxView BackgroundColor="White"
+                     HeightRequest="1"/>
+            <Label Text="{Binding ErrorMessage}"
+                   TextColor="IndianRed" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Button Text="Sign in"
+                        Command="{Binding SignIn}"
+                        BackgroundColor="Black"
+                        BorderColor="White"
+                        TextColor="White"
+                        HorizontalOptions="StartAndExpand"
+                        BorderWidth="1"/>
+                <Button Text="Register"
+                        Command="{Binding Register}"
+                        BackgroundColor="Black"
+                        BorderColor="White"
+                        TextColor="White"
+                        HorizontalOptions="End"
+                        BorderWidth="1"/>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+    
+</ContentPage>

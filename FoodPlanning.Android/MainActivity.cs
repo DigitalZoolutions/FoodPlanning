@@ -5,10 +5,11 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using FoodPlanning.App.AppCore;
 
 namespace FoodPlanning.Android
 {
-    [Activity(Label = "FoodPlanning.App", Theme = "@style/MainTheme", MainLauncher = true,
+    [Activity(Theme = "@style/MainTheme", MainLauncher = true,
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
@@ -16,6 +17,9 @@ namespace FoodPlanning.Android
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
+
+            var bootstrapper = new AppBootstrapper();
+            bootstrapper.SetupApplication();
 
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);

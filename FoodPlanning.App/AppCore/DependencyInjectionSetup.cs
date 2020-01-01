@@ -1,0 +1,20 @@
+using FoodPlanning.Common.ApplicationCore;
+using FoodPlanning.Common.SignIn;
+using XLabs.Ioc;
+
+namespace FoodPlanning.App.AppCore
+{
+    public static class DependencyInjectionSetup
+    {
+        public static void SetupCore()
+        {
+            var container = Resolver.Resolve<IDependencyContainer>();
+
+            // Base View Models
+            container.RegisterSingle<IBaseViewModel, BaseViewModel>();
+
+            // Specific Page View Models
+            container.Register<ISignInViewModel, SignInViewModel>();
+        }
+    }
+}

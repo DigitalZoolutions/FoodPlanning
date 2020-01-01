@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using FoodPlanning.App.AppCore;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -25,6 +26,9 @@ namespace FoodPlanning.Windows
         public MainPage()
         {
             this.InitializeComponent();
+            
+            var bootstrapper = new AppBootstrapper();
+            bootstrapper.SetupApplication();
             
             LoadApplication(new FoodPlanning.App.App());
         }

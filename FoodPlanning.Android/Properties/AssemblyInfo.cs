@@ -6,12 +6,12 @@ using Android.App;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("FoodPlanning.App.Android")]
+[assembly: AssemblyTitle("Food Planning")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("CompanyName")]
-[assembly: AssemblyProduct("FoodPlanning.App.Android")]
-[assembly: AssemblyCopyright("Copyright © CompanyName Year")]
+[assembly: AssemblyCompany("Digital Zoolutions")]
+[assembly: AssemblyProduct("Food Planning")]
+[assembly: AssemblyCopyright("Copyright © Digital Zoolutions 2020")]
 [assembly: AssemblyTrademark("CompanyTrademark")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]

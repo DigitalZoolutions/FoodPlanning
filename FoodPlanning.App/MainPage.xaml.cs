@@ -2,7 +2,7 @@
 
 namespace FoodPlanning.App
 {
-    public partial class MainPage : ContentPage
+    public partial class MainPage : Shell
     {
         public MainPage()
         {

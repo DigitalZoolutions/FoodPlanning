@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using FoodPlanning.App.AppCore;
 using Foundation;
 using UIKit;
 
@@ -21,6 +22,9 @@ namespace FoodPlanning.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            var bootstrapper = new AppBootstrapper();
+            bootstrapper.SetupApplication();
+            
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App.App());
 
