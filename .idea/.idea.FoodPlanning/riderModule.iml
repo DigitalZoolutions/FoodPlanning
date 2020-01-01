@@ -6,6 +6,7 @@
     <content url="file://C:/Microsoft/Xamarin/NuGet/xamarin.android.support.compat/28.0.0.3/proguard/monoandroid90/proguard.txt" />
     <content url="file://C:/Microsoft/Xamarin/NuGet/xamarin.android.support.coordinaterlayout/28.0.0.3/proguard/monoandroid90/proguard.txt" />
     <content url="file://C:/Microsoft/Xamarin/NuGet/xamarin.android.support.versionedparcelable/28.0.0.3/proguard/monoandroid90" />
+    <content url="file://$USER_HOME$/.nuget/packages/microsoft.ui.xaml/2.1.190606001/build/DensityStyles" />
     <content url="file://$USER_HOME$/.nuget/packages/xamarin.android.support.animated.vector.drawable/27.0.2.1/proguard/proguard.txt" />
     <content url="file://$USER_HOME$/.nuget/packages/xamarin.android.support.design/27.0.2.1/proguard/proguard.txt" />
     <content url="file://$USER_HOME$/.nuget/packages/xamarin.android.support.media.compat/27.0.2.1/proguard/proguard.txt" />
