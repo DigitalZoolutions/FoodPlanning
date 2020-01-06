@@ -28,7 +28,7 @@ namespace FoodPlanning.App.AppCore
                         Title = "Food Planning"
                     };
                     break;
-                case "mainpage":
+                case "main-page":
                     Application.Current.MainPage = new MainPage();
                     break;
                 default:
@@ -59,7 +59,8 @@ namespace FoodPlanning.App.AppCore
         internal static readonly List<NavigationRouteItem> RoutingDictionary = new List<NavigationRouteItem>
         {
             new NavigationRouteItem ("signin", typeof(ISignInViewModel), typeof(SignInPage)),
-            new NavigationRouteItem ("mainpage", typeof(IMainPageViewModel), typeof(MainPage)),
+            new NavigationRouteItem ("main-page", typeof(IMainPageViewModel), typeof(MainPage)),
+            new NavigationRouteItem ("food-schedule", typeof(IFoodScheduleViewModel), typeof(FoodSchedulePage)),
         };
     }
 }

@@ -17,6 +17,8 @@ namespace FoodPlanning.App.AppCore
 
             // Specific Page View Models
             container.Register<ISignInViewModel, SignInViewModel>();
+            container.Register<IMainPageViewModel, MainPageViewModel>();
+            container.Register<IFoodScheduleViewModel, FoodScheduleViewModel>();
         }
     }
 }

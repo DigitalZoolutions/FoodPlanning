@@ -20,7 +20,7 @@ namespace FoodPlanning.App
                 Routing.RegisterRoute(mappedRoute.Route, mappedRoute.PageType);
             }
 
-            MainPage = new SignInPage();
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()
