@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FoodPlanning.App.Views.FoodSchedulePage"
+             Title="Food Schedule">
+    
+    <CarouselView ItemsSource="{Binding PlanningCollection}">
+        <CarouselView.ItemTemplate>
+            <DataTemplate>
+                <StackLayout Orientation="Vertical" Padding="10">
+                    <Label Text="{Binding WeekNumber}" HorizontalTextAlignment="Center" HorizontalOptions="Center" FontSize="Large" VerticalOptions="Start" FontAttributes="Bold"/>
+                    <CollectionView ItemsSource="{Binding PlanningItems}" VerticalOptions="StartAndExpand">
+                        <CollectionView.ItemsLayout>
+                            <GridItemsLayout Orientation="Vertical" Span="2"
+                                             HorizontalItemSpacing="10" VerticalItemSpacing="10"/>
+                        </CollectionView.ItemsLayout>
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Frame BorderColor="Black" HasShadow="True" CornerRadius="10">
+                                    <StackLayout>
+                                        <Label Text="{Binding DayOfWeekName}" HorizontalOptions="Center" FontSize="Medium" FontAttributes="Bold"/>
+                                        <Label Text="{Binding Recipe.Name}"/>
+                                    </StackLayout>
+                                </Frame>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </StackLayout>
+            </DataTemplate>
+        </CarouselView.ItemTemplate>
+    </CarouselView>
+</ContentPage>
