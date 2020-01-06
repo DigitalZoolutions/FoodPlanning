@@ -1,4 +1,6 @@
-﻿using Xamarin.Forms;
+﻿using FoodPlanning.Features.MainPage;
+using Xamarin.Forms;
+using XLabs.Ioc;
 
 namespace FoodPlanning.App
 {
@@ -7,6 +9,10 @@ namespace FoodPlanning.App
         public MainPage()
         {
             InitializeComponent();
+
+            var vm = Resolver.Resolve<IMainPageViewModel>();
+
+            this.BindingContext = vm;
         }
     }
 }
