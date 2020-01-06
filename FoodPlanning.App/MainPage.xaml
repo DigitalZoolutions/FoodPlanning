@@ -2,28 +2,56 @@
 <Shell xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:FoodPlanning"
+             xmlns:views="clr-namespace:FoodPlanning.App.Views;assembly=FoodPlanning.App"
              x:Class="FoodPlanning.App.MainPage">
-
-    <FlyoutItem Title="Animals"
-                FlyoutDisplayOptions="AsMultipleItems">
-        <Tab Title="Domestic"
-             Icon="paw.png">
-            <ShellContent Title="Cats"
-                          Icon="cat.png">
-            </ShellContent>
-            <ShellContent Title="Dogs"
-                          Icon="dog.png">
-            </ShellContent>
+    
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <StackLayout BackgroundColor="White">
+                <Label Text="Food Planner" FontSize="Large" 
+                       HorizontalOptions="Center" VerticalOptions="Center" Margin="10"/>
+                <BoxView Color="Black" HeightRequest="1" HorizontalOptions="Fill"/>
+            </StackLayout>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+    
+    <FlyoutItem Title="Food Schedule">
+        <Tab>
+            <ShellContent Route="dashboard" ContentTemplate="{DataTemplate views:FoodSchedulePage}" />
         </Tab>
-        <ShellContent Title="Monkeys"
-                      Icon="monkey.png">
-        </ShellContent>
-        <ShellContent Title="Elephants"
-                      Icon="elephant.png">  
-        </ShellContent>
-        <ShellContent Title="Bears"
-                      Icon="bear.png">
-        </ShellContent>
     </FlyoutItem>
+    
+    <FlyoutItem Title="Shopping Lists">
+        <Tab>
+            <ShellContent Route="dashboard" ContentTemplate="{DataTemplate views:FoodSchedulePage}" />
+        </Tab>
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Food Planner">
+        <Tab>
+            <ShellContent Route="dashboard" ContentTemplate="{DataTemplate views:FoodSchedulePage}" />
+        </Tab>
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Receipt Collection">
+        <Tab>
+            <ShellContent Route="dashboard" ContentTemplate="{DataTemplate views:FoodSchedulePage}" />
+        </Tab>
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Food inventory">
+        <Tab>
+            <ShellContent Route="dashboard" ContentTemplate="{DataTemplate views:FoodSchedulePage}" />
+        </Tab>
+    </FlyoutItem>
+    
+    <MenuItem Text="Profile" >
+    </MenuItem>
+    
+    <MenuItem Text="Settings" >
+    </MenuItem>
+    
+    <MenuItem Text="Sign out" >
+    </MenuItem>
 
 </Shell>
