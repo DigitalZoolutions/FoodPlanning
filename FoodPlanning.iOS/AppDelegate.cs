@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using FoodPlanning.App.AppCore;
-using Foundation;
+﻿using Foundation;
 using UIKit;
+using ZXing.Net.Mobile.Forms.iOS;
 
 namespace FoodPlanning.iOS
 {
@@ -26,6 +23,9 @@ namespace FoodPlanning.iOS
             bootstrapper.SetupApplication();
             
             global::Xamarin.Forms.Forms.Init();
+            
+            Platform.Init();
+            
             LoadApplication(new App.App());
 
             return base.FinishedLaunching(app, options);

@@ -1,11 +1,7 @@
-﻿using System;
-using Android.App;
+﻿using Android.App;
 using Android.Content.PM;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
-using FoodPlanning.App.AppCore;
+using ZXing.Net.Mobile.Forms.Android;
 
 namespace FoodPlanning.Android
 {
@@ -22,6 +18,9 @@ namespace FoodPlanning.Android
             bootstrapper.SetupApplication();
 
             base.OnCreate(savedInstanceState);
+            
+            Platform.Init();
+            
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App.App());
         }

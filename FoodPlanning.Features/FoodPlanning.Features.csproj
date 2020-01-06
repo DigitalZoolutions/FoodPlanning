@@ -2,11 +2,17 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
+        <AssemblyName>FoodPlanning.Features</AssemblyName>
+        <RootNamespace>FoodPlanning.Features</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />
       <PackageReference Include="XLabs.IoC" Version="2.0.5782" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\FoodPlanning.Models\FoodPlanning.Models.csproj" />
     </ItemGroup>
 
 </Project>
