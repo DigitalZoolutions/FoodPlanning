@@ -1,5 +1,7 @@
-using FoodPlanning.Common.ApplicationCore;
-using FoodPlanning.Common.SignIn;
+using FoodPlanning.Features.ApplicationCore;
+using FoodPlanning.Features.FoodSchedule;
+using FoodPlanning.Features.MainPage;
+using FoodPlanning.Features.SignIn;
 using XLabs.Ioc;
 
 namespace FoodPlanning.App.AppCore

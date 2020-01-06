@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace FoodPlanning.Common.ApplicationCore
+namespace FoodPlanning.Features.ApplicationCore
 {
     public interface IAppSettings
     {

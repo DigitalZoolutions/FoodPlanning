@@ -5,7 +5,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\FoodPlanning.Common\FoodPlanning.Common.csproj" />
+      <ProjectReference Include="..\FoodPlanning.Features\FoodPlanning.Features.csproj" />
       <ProjectReference Include="..\FoodPlanning.Models\FoodPlanning.Models.csproj" />
     </ItemGroup>
 

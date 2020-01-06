@@ -2,9 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using FoodPlanning.Common.ApplicationCore;
-using FoodPlanning.Common.MainPage;
-using FoodPlanning.Common.SignIn;
+using FoodPlanning.App.Views;
+using FoodPlanning.Features.ApplicationCore;
+using FoodPlanning.Features.FoodSchedule;
+using FoodPlanning.Features.MainPage;
+using FoodPlanning.Features.SignIn;
 using Xamarin.Forms;
 
 namespace FoodPlanning.App.AppCore

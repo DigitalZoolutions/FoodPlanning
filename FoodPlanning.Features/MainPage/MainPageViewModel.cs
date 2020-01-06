@@ -1,6 +1,6 @@
-using FoodPlanning.Common.ApplicationCore;
+using FoodPlanning.Features.ApplicationCore;
 
-namespace FoodPlanning.Common.MainPage
+namespace FoodPlanning.Features.MainPage
 {
     public class MainPageViewModel : BaseViewModel, IMainPageViewModel
     {

@@ -1,5 +1,5 @@
 using FoodPlanning.App.AppCore;
-using FoodPlanning.Common.ApplicationCore;
+using FoodPlanning.Features.ApplicationCore;
 using TinyIoC;
 using XLabs.Ioc;
 using XLabs.Ioc.TinyIOC;

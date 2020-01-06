@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-namespace FoodPlanning.Common.ApplicationCore
+namespace FoodPlanning.Features.ApplicationCore
 {
     public interface IBaseViewModel : INotifyPropertyChanged
     {

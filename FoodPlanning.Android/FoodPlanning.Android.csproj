@@ -85,9 +85,9 @@
       <Project>{52eefe22-cbbd-4710-8a4b-9b6a9948b1aa}</Project>
       <Name>FoodPlanning.App</Name>
     </ProjectReference>
-    <ProjectReference Include="..\FoodPlanning.Common\FoodPlanning.Common.csproj">
+    <ProjectReference Include="..\FoodPlanning.Features\FoodPlanning.Features.csproj">
       <Project>{7bdf5f67-afcb-4bb4-8976-f4223e010b8b}</Project>
-      <Name>FoodPlanning.Common</Name>
+      <Name>FoodPlanning.Features</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

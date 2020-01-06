@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodPlanning.Backend", "Foo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodPlanning.Windows", "FoodPlanning.Windows\FoodPlanning.Windows.csproj", "{031775FA-1886-456C-A8C3-789847C60EF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodPlanning.Common", "FoodPlanning.Common\FoodPlanning.Common.csproj", "{7BDF5F67-AFCB-4BB4-8976-F4223E010B8B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodPlanning.Features", "FoodPlanning.Features\FoodPlanning.Features.csproj", "{7BDF5F67-AFCB-4BB4-8976-F4223E010B8B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodPlanning.Models", "FoodPlanning.Models\FoodPlanning.Models.csproj", "{CCECC0FB-B414-4ECE-A33A-F69746C8DBA1}"
 EndProject

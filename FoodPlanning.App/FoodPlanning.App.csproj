@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
@@ -18,7 +18,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\FoodPlanning.Common\FoodPlanning.Common.csproj" />
+      <ProjectReference Include="..\FoodPlanning.Features\FoodPlanning.Features.csproj" />
       <ProjectReference Include="..\FoodPlanning.Models\FoodPlanning.Models.csproj" />
     </ItemGroup>
 </Project>

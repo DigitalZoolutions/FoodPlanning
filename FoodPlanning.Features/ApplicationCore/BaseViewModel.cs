@@ -1,8 +1,7 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using FoodPlanning.Common.Annotations;
 
-namespace FoodPlanning.Common.ApplicationCore
+namespace FoodPlanning.Features.ApplicationCore
 {
     public class BaseViewModel : IBaseViewModel
     {

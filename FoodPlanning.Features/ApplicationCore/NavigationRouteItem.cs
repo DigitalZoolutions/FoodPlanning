@@ -1,6 +1,6 @@
 using System;
 
-namespace FoodPlanning.Common.ApplicationCore
+namespace FoodPlanning.Features.ApplicationCore
 {
     public class NavigationRouteItem
     {

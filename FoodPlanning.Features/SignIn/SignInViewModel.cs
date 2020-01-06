@@ -1,9 +1,9 @@
 using System.Windows.Input;
-using FoodPlanning.Common.ApplicationCore;
+using FoodPlanning.Features.ApplicationCore;
 using Xamarin.Forms;
 using XLabs.Ioc;
 
-namespace FoodPlanning.Common.SignIn
+namespace FoodPlanning.Features.SignIn
 {
     public class SignInViewModel : BaseViewModel, ISignInViewModel
     {
