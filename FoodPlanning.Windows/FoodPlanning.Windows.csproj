@@ -152,10 +152,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-      <Version>6.2.9</Version>
+      <Version>6.2.10</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms">
-      <Version>4.4.0.991265</Version>
+      <Version>4.7.0.1080</Version>
     </PackageReference>
     <PackageReference Include="XLabs.IoC">
       <Version>2.0.5782</Version>

@@ -9,5 +9,10 @@
       <ProjectReference Include="..\FoodPlanning.Models\FoodPlanning.Models.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="DbModels" />
+      <Folder Include="Services" />
+    </ItemGroup>
+
 
 </Project>

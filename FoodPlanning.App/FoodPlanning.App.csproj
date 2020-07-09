@@ -13,7 +13,7 @@
         <PackageReference Include="Microsoft.AppCenter" Version="2.6.4" />
         <PackageReference Include="Microsoft.AppCenter.Analytics" Version="2.6.4" />
         <PackageReference Include="Microsoft.AppCenter.Crashes" Version="2.6.4" />
-        <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />
+        <PackageReference Include="Xamarin.Forms" Version="4.7.0.1080" />
         <PackageReference Include="XLabs.IoC" Version="2.0.5782" />
         <PackageReference Include="ZXing.Net.Mobile.Forms" Version="2.4.1" />
     </ItemGroup>
@@ -21,5 +21,18 @@
     <ItemGroup>
       <ProjectReference Include="..\FoodPlanning.Features\FoodPlanning.Features.csproj" />
       <ProjectReference Include="..\FoodPlanning.Models\FoodPlanning.Models.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="AppShell.xaml">
+        <SubType>Designer</SubType>
+        <Generator></Generator>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="AppShell.xaml.cs">
+        <DependentUpon>AppShell.xaml</DependentUpon>
+      </Compile>
     </ItemGroup>
 </Project>

@@ -107,7 +107,7 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />
+    <PackageReference Include="Xamarin.Forms" Version="4.7.0.1080" />
     <PackageReference Include="XLabs.IoC" Version="2.0.5782" />
     <PackageReference Include="XLabs.IoC.TinyIoC" Version="2.0.5782" />
     <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />
